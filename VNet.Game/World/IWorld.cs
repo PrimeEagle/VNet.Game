@@ -1,4 +1,4 @@
-﻿namespace VNet.Game
+﻿namespace VNet.Game.World
 {
     public interface IWorld
     {

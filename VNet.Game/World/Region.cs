@@ -1,6 +1,6 @@
 ﻿namespace VNet.Game.World
 {
-    internal class WorldManager : IWorld
+    public class Region : RegionBase
     {
     }
 }

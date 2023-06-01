@@ -1,6 +1,6 @@
 ﻿namespace VNet.Game.World
 {
-    public interface IWorld
+    public abstract class WorldBase : IWorld
     {
         public HashSet<IRegion> Regions { get; set; }
     }

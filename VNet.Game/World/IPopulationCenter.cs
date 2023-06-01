@@ -1,4 +1,5 @@
-﻿using VNet.Game.Economy;
+﻿using VNet.AI.Behavior.Agents;
+using VNet.Game.Economy;
 using VNet.Game.Society;
 
 namespace VNet.Game.World
@@ -7,5 +8,6 @@ namespace VNet.Game.World
     {
         public IEconomy Economy { get; set; }
         public ISociety Society { get; set; }
+        public HashSet<IAgent> Agents { get; set; }
     }
 }

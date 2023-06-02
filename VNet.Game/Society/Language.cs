@@ -1,6 +1,6 @@
 ﻿namespace VNet.Game.Society
 {
-    public interface IReligion
+    public class Language : LanguageBase
     {
     }
 }

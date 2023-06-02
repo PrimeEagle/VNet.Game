@@ -2,5 +2,6 @@
 {
     public interface ISociety
     {
+       public  ICulture Culture { get; set;  }
     }
 }

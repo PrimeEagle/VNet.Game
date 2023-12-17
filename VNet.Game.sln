@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VNet.Game", "VNet.Game\VNet.Game.csproj", "{2BC2D29D-F4FF-457E-A8EE-AE5F8487DF89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Game", "VNet.Game\VNet.Game.csproj", "{2BC2D29D-F4FF-457E-A8EE-AE5F8487DF89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VNet.Game.Tests", "VNet.Game.Tests\VNet.Game.Tests.csproj", "{E5EA4DC2-85F1-4D85-808A-B50F2F3FE742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Game.Tests", "VNet.Game.Tests\VNet.Game.Tests.csproj", "{E5EA4DC2-85F1-4D85-808A-B50F2F3FE742}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".version", ".version", "{259F5BD2-BE9E-4C69-BDE2-28719F167986}"
+	ProjectSection(SolutionItems) = preProject
+		.version\version.json = .version\version.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

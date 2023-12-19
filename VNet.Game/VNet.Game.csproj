@@ -1,13 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(ServerBuild)' != ''">
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="VNet.AI" Version="1.0.0" />
-  </ItemGroup>
+	<ItemGroup Condition="'$(ServerBuild)' != ''">
+		<PackageReference Include="VNet.AI" Version="1.0.0" />
+	</ItemGroup>
 
+	<ItemGroup Condition="'$(ServerBuild)' == ''">
+		<ProjectReference Include="..\..\VNet.AI\VNet.AI\VNet.AI.csproj" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
+		<Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
+	</Target>
 </Project>

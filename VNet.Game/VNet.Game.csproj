@@ -5,6 +5,27 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<PackageId>VNet.Game</PackageId>
+		<Authors>PrimeEagle</Authors>
+		<Product>VNet.Game</Product>
+		<Description>A class library with algorithms and helpers for game development.</Description>
+		<PackageTags>dotnet;dotnet-core;dotnet-library;game;game-dev</PackageTags>
+		<PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/PrimeEagle/VNet.Game</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/PrimeEagle/VNet.Game</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>VNet.Game</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	
 	<PropertyGroup Condition="'$(ServerBuild)' != ''">
 	</PropertyGroup>
 
